@@ -3,9 +3,10 @@ on:
      branches:
        - master
 name: release-please
+       - main
 jobs:
   release-please:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: bcoe/release-please-action@v2.1.0
         id: release
